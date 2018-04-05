@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<form action ="{% url 'login' %}" method = "POST" enctype="enctype=application/x-www-form-urlencoded">
+{% csrf_token %}
+<input type="text" name="username"></input>
+</br>
+<input type="password" name="password"></input>
+</br>
+<button type="submit">Login</button>
+</form>
+</body>
+</html>
+
